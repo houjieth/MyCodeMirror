@@ -1,7 +1,15 @@
 var editSession;
 var editor;
 
+  /*
+  if($('.fileList').css('display') != 'none')
+    $('.fileList').css({display: 'none'});
+  else
+    $('.fileList').css({display: 'block'});
+  */
+
 $(document).ready(function() {
+        
   $('.fileLink').each(function(i, elem) {
     $(elem).click(function() {
       $('.buffer').load(escape($(elem).attr('url')), 
@@ -17,11 +25,15 @@ $(document).ready(function() {
         });
     });
   });
+
+  $('#toggleFileList').click(function() {
+    $('.fileList').toggle();
+    /*
+    if($('.fileList').css("display") != "none")
+      $('.fileList').css({"display": "none"});
+    else
+      $('.fileList').css({"display": "block"});
+    */
+  });
 });
 
-function toggleFileList() {
-  if($('.fileList').style.display != 'none')
-    $('.fileList').style.display='none';
-  else
-    $('.fileList').style.display='block';
-}

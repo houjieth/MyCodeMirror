@@ -1,0 +1,17 @@
+.filelist {
+  position: absolute;
+  top: 40px;
+  width: 300px;
+}
+
+#editor { 
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  bottom: 0px;
+  left: 300px;
+}
+
+.buffer {
+  display: none;
+}

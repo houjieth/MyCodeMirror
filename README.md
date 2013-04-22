@@ -1,4 +1,5 @@
-MyAce
-=====
+MyCodeMirror
+============
 
-Yet another web-based file viewer/editor based on Ace.
+Yet another ajax-only web file viewer/editor based on CodeMirror and Node.js.
+
