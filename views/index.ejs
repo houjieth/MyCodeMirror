@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IP Viewer/Editor</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/javascripts/index.js"></script>
+<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css" media="screen">
+</style>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<div class="navigator">
+navigator
+</div>
+
+<div class="filelist">
+<% fileList.forEach(function(filename){ %>
+    <li>
+      <a href="#" class="fileLink" url="/file/<%=filename%>/readHtml"><%=filename%></a>
+      <a href="#" class="fileLink" url="/file/<%=filename%>/readSource">(source)</a>
+    </li>
+<% }) %>
+</div>
+
+<div class="main" id="editor">
+</div>
+
+<div class="buffer"> 
+</div>
+
+<div class="searcher">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IP Viewer/Editor</title>
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<iframe class="searcher" src="/file/Cracking%20Part%201.txt/readSource">
+</iframe>
+
+<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+</script>
+</body>
+</html>
