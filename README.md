@@ -1,1 +1,4 @@
-A simple RESTful Node.js backend serving request for a web text editor and viewer.
+MyAce
+=====
+
+Yet another web-based file viewer/editor based on Ace.
