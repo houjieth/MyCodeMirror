@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+A simple RESTful Node.js backend serving request for a web text editor and viewer.
+=======
+MyAce
+=====
+
+Yet another web-based file viewer/editor based on Ace.
+>>>>>>> ea5326d3d54a0ac809d73ae3ffb00367896749e2

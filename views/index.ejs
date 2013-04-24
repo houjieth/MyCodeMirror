@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
 <title>IP Viewer/Editor</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel='stylesheet' href='/stylesheets/codemirror.css' />
+<link rel='stylesheet' href='/stylesheets/dialog.css' />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <script src="/javascripts/index.js"></script>
-<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/codemirror.js"></script>
+<script src="/javascripts/dialog.js"></script>
+<script src="/javascripts/searchcursor.js"></script>
+<script src="/javascripts/vim.js"></script>
 <style type="text/css" media="screen">
 </style>
-<link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
 
 <div class="navigator">
-<button id="toggleFileList" type="button">Toggle File List</button>
+<button id="togglefilelist" type="button">Toggle File List</button>
 </div>
 
 <div class="filelist">
 <% fileList.forEach(function(filename){ %>
     <li>
-      <a href="#" class="fileLink" url="/file/<%=filename%>/readHtml"><%=filename%></a>
-      <a href="#" class="fileLink" url="/file/<%=filename%>/readSource">(source)</a>
+      <a href="#" class="fileLink" filename="<%=filename%>" url="/file/<%=filename%>/readHtml"><%=filename%></a>
+      <a href="#" class="fileLink" filename="<%=filename%>" url="/file/<%=filename%>/readSource" writeUrl="/file/<%=filename%>/writeSource">(source)</a>
     </li>
 <% }) %>
 </div>
 
-<div class="main" id="editor">
+<div id="main">
+    <textarea id="editor">
+    </textarea>
 </div>
 
-<div class="buffer"> 
-</div>
+<form class="submitbuffer"> 
+</form>
 
 <div class="searcher">
 </div>
