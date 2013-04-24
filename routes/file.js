@@ -15,6 +15,7 @@ exports.writeSource = function(req, res){
   var filetools = require('../lib/filetools');
   var filename = req.params.filename;
   var content = req.body.fileContent;
-  console.log(filename + " : " + content);
-  res.end("received");
+  console.log(filename + ":\n" + content);
+  filetools.writeFile(filename, content);
+  res.end("finished");
 };
