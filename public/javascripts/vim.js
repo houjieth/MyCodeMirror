@@ -78,6 +78,8 @@
     { keys: ['End'], type: 'keyToKey', toKeys: ['$'] },
     { keys: ['PageUp'], type: 'keyToKey', toKeys: ['Ctrl-b'] },
     { keys: ['PageDown'], type: 'keyToKey', toKeys: ['Ctrl-f'] },
+    { keys: ['PageUp'], type: 'keyToKey', toKeys: [','] },
+    { keys: ['PageDown'], type: 'keyToKey', toKeys: ['.'] },
     // Motions
     { keys: ['H'], type: 'motion',
         motion: 'moveToTopLine',

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>IP Viewer/Editor</title>
+<title>IP Editor</title>
 <link rel='stylesheet' href='/stylesheets/style.css' />
 <link rel='stylesheet' href='/stylesheets/codemirror.css' />
 <link rel='stylesheet' href='/stylesheets/dialog.css' />
@@ -26,8 +26,7 @@
 <div class="filelist">
 <% fileList.forEach(function(filename){ %>
     <li>
-      <a href="#" class="fileLink" filename="<%=filename%>" url="/file/<%=filename%>/readHtml"><%=filename%></a>
-      <a href="#" class="fileLink" filename="<%=filename%>" url="/file/<%=filename%>/readSource" writeUrl="/file/<%=filename%>/writeSource">(source)</a>
+      <a href="#" class="fileLink" filename="<%=filename%>" url="/file/<%=filename%>/readSource" writeUrl="/file/<%=filename%>/writeSource"><%=filename%></a>
     </li>
 <% }) %>
 </div>

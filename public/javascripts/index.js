@@ -55,6 +55,6 @@ function loadAndInitDoc(elem, initLineNum) {
     var writeUrl = escape($(elem).attr('writeUrl'));
     var content = cm.getDoc().getValue();
     $.post(writeUrl, {fileContent : content});
-    alert("POST to: " + writeUrl); 
+    alert("Save to: " + writeUrl); 
   };
 };
